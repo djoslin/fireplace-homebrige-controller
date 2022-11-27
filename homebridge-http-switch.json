@@ -1,0 +1,32 @@
+{
+    "accessories": [
+        {
+            "accessory": "HTTP-SWITCH",
+            "name": "Fireplace On",
+            "switchType": "stateless",
+            "timeout": 1000,
+            "onUrl": "http://192.168.128.205/fireon"
+        }
+        {
+            "accessory": "HTTP-SWITCH",
+            "name": "Fireplace Up",
+            "switchType": "stateless",
+            "timeout": 1000,
+            "onUrl": "http://192.168.128.205/fireup"
+        }
+        {
+            "accessory": "HTTP-SWITCH",
+            "name": "Fireplace Down",
+            "switchType": "stateless",
+            "timeout": 1000,
+            "onUrl": "http://192.168.128.205/firedown"
+        }
+        {
+            "accessory": "HTTP-SWITCH",
+            "name": "Fireplace Off",
+            "switchType": "stateless",
+            "timeout": 1000,
+            "onUrl": "http://192.168.128.205/fireoff"
+        }
+    ]
+}
