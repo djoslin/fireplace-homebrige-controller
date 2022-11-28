@@ -66,9 +66,9 @@ I based my web interface on examples from Rui Santos found at [http://randomnerd
 
 I wanted separate URIs for each function.  
 /fireon  
-/fireup
-/foredown
-/fireoff
+/fireup  
+/firedown  
+/fireoff  
 / - has the links and displays current-seconds-of-on as a status.
 
 The look of the web ui was not important, as the functions will be called via a Homebridge Plugin.
