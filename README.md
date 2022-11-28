@@ -85,6 +85,8 @@ In the plugin config you define a config for each accessory. In my case, I have 
 
 Additionally, I am choosing to not run these as child bridges, as the plugin wants to treat each device as a separate child bridge.
 
+![Homebridge accessories!](homebridge-accesories.jpeg "Homebridge Accessories")
+
 **Apple Home**
 
 In Apple Home, choose to edit your Home Setting (top right, circle with dots).  
@@ -94,11 +96,16 @@ Here you should see all the devices associated with that Homebrige. Based on my 
 
 Now I have 4 Fireplace switches in my Living room. Toggle any of the switches on and it returns to the off state, mimicing the behaviour of the fireplace wall switch.
 
+![Apple Home!](apple-home-livingroom.jpeg "Apple Home Living Room")
+
 Last, add an Automation.  
 Choose Time of day Occurs.  
 Choose the time you want this to run, in my case 12:30AM and the days. Click Next.  
 Scroll to find "Fireplace Off" and select it. Next.  
 You can then test the automation or click Done.
+
+![Apple Home!](apple-home-automation.jpeg "Apple Home Automation")
+
  
 
 
