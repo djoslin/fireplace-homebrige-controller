@@ -38,9 +38,13 @@ If I were to do another one, I would switch to the Olimex ESP32-POE-ISO. It is s
 
 I am sure this is overly complex, but it works.
 
+I attempted to the an Arduino Relay Shield. It worked great for the prototype but was incompatible with the ethernet shield.
+
 I used 2 [DC 5V Relay Module 2 Channel Relay Board with Optocoupler Support High or Low Level Trigger](https://www.amazon.com/dp/B099MC4TJD?psc=1&ref=ppx_yo2ov_dt_b_product_details).
 
-1 pair of relays switches together and provides +6vdc for turning the fire up. The other pair of relays fire together and provide -6vdc for turning the fireplace down.
+These are good relays in that they are decoupled from the controller by the optocouplers and the can handle 10A loads for both 30vdc and 125vac. Total overkill for this 6vdc user, but they work.
+
+1 pair of relays activate together to provide +6vdc for turning the fireplace up. The other pair of relays activate together to provide -6vdc for turning the fireplace down.
 
 ![Relay curcuit!](Fireplace-relay.jpeg "Fireplace-relay")
 
@@ -65,9 +69,11 @@ I wanted separate URIs for each function.
 /fireup
 /foredown
 /fireoff
-/ - has the links and display current-seconds-of-on as a status.
+/ - has the links and displays current-seconds-of-on as a status.
 
 The look of the web ui was not important, as the functions will be called via a Homebridge Plugin.
+
+![Fireplace Web Page!](Fireplace-web.jpeg "Fireplace-web")
 
 **[homebridge-http-switch](https://github.com/Supereg/homebridge-http-switch) plugin**
 
