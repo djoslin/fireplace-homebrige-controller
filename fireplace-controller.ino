@@ -1,3 +1,4 @@
+// Designed and tested on Arduino Uno + Ethernet Shield + POE module.
 
 #include <SPI.h>
 #include <Ethernet.h>
